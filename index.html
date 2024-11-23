@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indulgence</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f5f2;
+        }
+        img {
+            /* Default for desktop: 5 inches wide (approximately 380px) */
+            width: 380px;
+            max-width: 100%;
+            object-fit: contain;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            /* Preserve aspect ratio based on actual dimensions */
+            aspect-ratio: 303/2371;
+        }
+
+        /* On smaller screens (phones), take up 85% of screen width */
+        @media screen and (max-width: 768px) {
+            img {
+                width: 85vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="indulgence.svg" alt="Indulgence">
+</body>
+</html>
